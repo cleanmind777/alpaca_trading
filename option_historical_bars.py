@@ -10,11 +10,11 @@ import json
 load_dotenv()
 
 # Access environment variables
-APCA_API_KEY_ID = os.getenv('APCA_API_KEY_ID')
-APCA_API_SECRET_KEY = os.getenv('APCA_API_SECRET_KEY')
+ALPACA_API_KEY_ID = os.getenv('ALPACA_API_KEY_ID')
+ALPACA_API_SECRET_KEY = os.getenv('ALPACA_API_SECRET_KEY')
 
 # setup option clients for historical data
-option_historical_data_client = OptionHistoricalDataClient(APCA_API_KEY_ID,  APCA_API_SECRET_KEY)
+option_historical_data_client = OptionHistoricalDataClient(ALPACA_API_KEY_ID,  ALPACA_API_SECRET_KEY)
 
 # currently time
 now = datetime.now(tz = ZoneInfo("America/New_York"))
